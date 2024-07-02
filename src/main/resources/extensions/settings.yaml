@@ -1,0 +1,16 @@
+apiVersion: v1alpha1
+kind: Setting
+metadata:
+  name: algolia-search-engine-setting
+spec:
+  forms:
+    - group: basic
+      label: Basic
+      formSchema:
+        - $formkit: secret
+          name: secretName
+          required: true
+          label: "Secret Name. The secret should contain the following keys: apiKey, appId"
+        - $formkit: text
+          name: indexName
+          label: Index Name

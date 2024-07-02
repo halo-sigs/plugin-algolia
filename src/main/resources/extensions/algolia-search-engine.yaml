@@ -1,0 +1,10 @@
+apiVersion: plugin.halo.run/v1alpha1
+kind: ExtensionDefinition
+metadata:
+  name: search-engine-algolia
+spec:
+  className: run.halo.search.algolia.AlgoliaSearchEngine
+  extensionPointName: search-engine
+  displayName: "Algolia"
+  description: "Algolia is a hosted search engine capable of delivering real-time results from the first keystroke."
+  icon: "/plugins/algolia-search-engine/assets/logo.svg?version=1.0.0"
